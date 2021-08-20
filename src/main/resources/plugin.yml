@@ -1,0 +1,10 @@
+name: InGameClock
+version: '${project.version}'
+main: net.clustlight.spigot.ingameclock.InGameClock
+api-version: 1.17
+authors: [ 0scarLX ]
+description: In-GameClock
+commands:
+  igc:
+    description: Toggle In-Game Clock
+    usage: /igc [ bar | score | off ]
