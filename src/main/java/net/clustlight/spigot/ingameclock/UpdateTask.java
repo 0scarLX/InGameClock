@@ -22,6 +22,8 @@ public class UpdateTask extends BukkitRunnable {
         String previous_data1 = DateTimeFormatter.ofPattern(InGameClockConfig.get().getString("[settings].Score.TimeFormat")).format(d.minusSeconds(1));
         String previous_data2 = DateTimeFormatter.ofPattern(InGameClockConfig.get().getString("[settings].Score.TimeFormat")).format(d.minusSeconds(2));
         String previous_data3 = DateTimeFormatter.ofPattern(InGameClockConfig.get().getString("[settings].Score.TimeFormat")).format(d.minusSeconds(3));
+        String previous_data4 = DateTimeFormatter.ofPattern(InGameClockConfig.get().getString("[settings].Score.TimeFormat")).format(d.minusSeconds(4));
+        String previous_data5 = DateTimeFormatter.ofPattern(InGameClockConfig.get().getString("[settings].Score.TimeFormat")).format(d.minusSeconds(5));
 
         // Update Process for TopBarClock
         String bf = InGameClockConfig.get().getString("[settings].Bar.Formatting");
@@ -33,6 +35,8 @@ public class UpdateTask extends BukkitRunnable {
         ScoreBoardClock.scoreboard.resetScores(sf + previous_data1);
         ScoreBoardClock.scoreboard.resetScores(sf + previous_data2);
         ScoreBoardClock.scoreboard.resetScores(sf + previous_data3);
+        ScoreBoardClock.scoreboard.resetScores(sf + previous_data4);
+        ScoreBoardClock.scoreboard.resetScores(sf + previous_data5);
         Score score = ScoreBoardClock.objective.getScore(sf + score_data);
         score.setScore(0);
     }
