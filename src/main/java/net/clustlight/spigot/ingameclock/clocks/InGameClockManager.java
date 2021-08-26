@@ -14,14 +14,14 @@ public class InGameClockManager {
 
         String string = InGameClockConfig.get().getString(player.getName());
 
-        if(string == null){
+        if (string == null) {
             TopBarClock.bar.addPlayer(player);
             player.setScoreboard(ScoreBoardClock.scoreboard);
             player.sendMessage(ChatColor.GOLD+"[In-GameClock] " + ChatColor.AQUA + "To change the clock type, use " + ChatColor.DARK_RED + "/igc");
             return;
         }
 
-        switch (string){
+        switch (string) {
 
             case "bar":
                 TopBarClock.bar.addPlayer(player);

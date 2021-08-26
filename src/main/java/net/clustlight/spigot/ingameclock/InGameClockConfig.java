@@ -15,24 +15,24 @@ public class InGameClockConfig {
     public static void init() {
         file = new File(Bukkit.getServer().getPluginManager().getPlugin("InGameClock").getDataFolder(), "config.yml");
 
-        if(!file.exists()){
-            try{
+        if (!file.exists()) {
+            try {
                 file.createNewFile();
-            }catch (IOException exception){
+            } catch (IOException exception) {
                 System.out.println("Could not create file");
             }
         }
         config = YamlConfiguration.loadConfiguration(file);
     }
 
-    public static FileConfiguration get(){
+    public static FileConfiguration get() {
         return config;
     }
 
-    public static void save(){
-        try{
+    public static void save() {
+        try {
             config.save(file);
-        }catch (IOException exception){
+        } catch (IOException exception) {
             System.out.println("Could not save file");
         }
     }
