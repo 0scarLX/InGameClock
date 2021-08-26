@@ -1,5 +1,6 @@
 package net.clustlight.spigot.ingameclock;
 
+import net.clustlight.spigot.ingameclock.clocks.InGameClockManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

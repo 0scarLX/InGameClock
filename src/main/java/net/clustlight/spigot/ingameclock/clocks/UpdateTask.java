@@ -1,7 +1,6 @@
-package net.clustlight.spigot.ingameclock;
+package net.clustlight.spigot.ingameclock.clocks;
 
-import net.clustlight.spigot.ingameclock.clocks.TopBarClock;
-import net.clustlight.spigot.ingameclock.clocks.ScoreBoardClock;
+import net.clustlight.spigot.ingameclock.InGameClockConfig;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scoreboard.Score;
 

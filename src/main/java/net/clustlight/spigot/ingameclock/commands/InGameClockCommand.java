@@ -1,7 +1,7 @@
 package net.clustlight.spigot.ingameclock.commands;
 
 import net.clustlight.spigot.ingameclock.InGameClockConfig;
-import net.clustlight.spigot.ingameclock.InGameClockManager;
+import net.clustlight.spigot.ingameclock.clocks.InGameClockManager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
