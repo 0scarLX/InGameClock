@@ -17,7 +17,7 @@ public class InGameClockManager {
         if (string == null) {
             TopBarClock.bar.addPlayer(player);
             player.setScoreboard(ScoreBoardClock.scoreboard);
-            player.sendMessage(ChatColor.GOLD+"[In-GameClock] " + ChatColor.AQUA + "To change the clock type, use " + ChatColor.DARK_RED + "/igc");
+            player.sendMessage(ChatColor.GOLD + "[In-GameClock] " + ChatColor.AQUA + "To change the clock type, use " + ChatColor.DARK_RED + "/igc");
             return;
         }
 

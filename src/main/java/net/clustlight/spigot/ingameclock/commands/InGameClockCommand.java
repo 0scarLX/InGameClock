@@ -26,7 +26,7 @@ public class InGameClockCommand implements CommandExecutor {
                     InGameClockConfig.save();
 
                     InGameClockManager.setClock(player);
-                    player.sendMessage(ChatColor.GOLD+"[InGameClock] " + ChatColor.AQUA + "In-Game Clock is now Bar mode");
+                    player.sendMessage(ChatColor.GOLD + "[InGameClock] " + ChatColor.AQUA + "In-Game Clock is now Bar mode");
 
                 } else if (args[0].equalsIgnoreCase("score")) {
 
@@ -34,7 +34,7 @@ public class InGameClockCommand implements CommandExecutor {
                     InGameClockConfig.save();
 
                     InGameClockManager.setClock(player);
-                    player.sendMessage(ChatColor.GOLD+"[InGameClock] " + ChatColor.YELLOW + "In-Game Clock is now Score mode");
+                    player.sendMessage(ChatColor.GOLD + "[InGameClock] " + ChatColor.YELLOW + "In-Game Clock is now Score mode");
 
                 } else if (args[0].equalsIgnoreCase("off")) {
 
@@ -42,7 +42,7 @@ public class InGameClockCommand implements CommandExecutor {
                     InGameClockConfig.save();
 
                     InGameClockManager.setClock(player);
-                    player.sendMessage(ChatColor.GOLD+"[InGameClock] " + ChatColor.RED + "In-Game Clock is now Disabled");
+                    player.sendMessage(ChatColor.GOLD + "[InGameClock] " + ChatColor.RED + "In-Game Clock is now Disabled");
 
                 } else {
                     player.performCommand("help igc");
